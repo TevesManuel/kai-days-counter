@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 98dvw;
+    height: 98dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 18, 33);
+    overflow: hidden;
+}
+
+#daysCounter {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+}
+
+#day {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hearth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    /* opacity: 0.5; */
+    scale: 2;
+    z-index: -1;
+    transform: translateY(15px);
+}
+
+.hearth {
+    width: 100px;
+    height: 100px;
+    background: rgb(131, 15, 43);
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.hearth::before,
+.hearth::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: rgb(131, 15, 43);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.hearth::before {
+    top: -50px;
+    left: 0;
+}
+
+.hearth::after {
+    left: 50px;
+    top: 0;
+}
+
